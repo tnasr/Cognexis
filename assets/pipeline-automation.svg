@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b6cb0" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#0ea5e9" stop-opacity="0.75"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#111827" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="700" rx="36" fill="#ffffff"/>
+  <rect x="40" y="40" width="1120" height="620" rx="28" fill="#fbfbf9" stroke="#e7e7e3"/>
+  <text x="90" y="120" font-family="ui-sans-serif, system-ui" font-size="34" font-weight="800" fill="#111827">End-to-End Pipeline Automation</text>
+  <text x="90" y="165" font-family="ui-sans-serif, system-ui" font-size="18" fill="#4b5563">Near-live ingestion → validation → transforms → KPIs → dashboards</text>
+
+  <g filter="url(#s)">
+    <rect x="90" y="230" width="210" height="110" rx="18" fill="#ffffff" stroke="#e7e7e3"/>
+    <text x="120" y="275" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="700" fill="#111827">Sources</text>
+    <text x="120" y="305" font-family="ui-sans-serif, system-ui" font-size="14" fill="#4b5563">Logs • KPIs • Events</text>
+
+    <rect x="360" y="230" width="250" height="110" rx="18" fill="#ffffff" stroke="#e7e7e3"/>
+    <text x="390" y="275" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="700" fill="#111827">Ingest + Validate</text>
+    <text x="390" y="305" font-family="ui-sans-serif, system-ui" font-size="14" fill="#4b5563">Schema, quality gates</text>
+
+    <rect x="670" y="230" width="260" height="110" rx="18" fill="#ffffff" stroke="#e7e7e3"/>
+    <text x="700" y="275" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="700" fill="#111827">Transform + Enrich</text>
+    <text x="700" y="305" font-family="ui-sans-serif, system-ui" font-size="14" fill="#4b5563">Customer / geo mapping</text>
+
+    <rect x="990" y="230" width="120" height="110" rx="18" fill="#ffffff" stroke="#e7e7e3"/>
+    <text x="1010" y="275" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="700" fill="#111827">BI</text>
+    <text x="1010" y="305" font-family="ui-sans-serif, system-ui" font-size="14" fill="#4b5563">Dashboards</text>
+  </g>
+
+  <path d="M300 285 C330 285 330 285 360 285" fill="none" stroke="url(#g1)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M610 285 C640 285 640 285 670 285" fill="none" stroke="url(#g1)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M930 285 C960 285 960 285 990 285" fill="none" stroke="url(#g1)" stroke-width="8" stroke-linecap="round"/>
+
+  <g filter="url(#s)">
+    <rect x="90" y="390" width="1020" height="220" rx="22" fill="#ffffff" stroke="#e7e7e3"/>
+    <text x="120" y="435" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="800" fill="#111827">Automation controls</text>
+
+    <rect x="120" y="470" width="300" height="110" rx="16" fill="#eef6ff" stroke="#cfe3fb"/>
+    <text x="145" y="510" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#1e3a8a">Scheduling</text>
+    <text x="145" y="538" font-family="ui-sans-serif, system-ui" font-size="13" fill="#1f2937">Near-live refresh windows</text>
+
+    <rect x="450" y="470" width="320" height="110" rx="16" fill="#ffffff" stroke="#e7e7e3"/>
+    <text x="475" y="510" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#111827">Data Quality Gates</text>
+    <text x="475" y="538" font-family="ui-sans-serif, system-ui" font-size="13" fill="#4b5563">Outlier checks • completeness</text>
+
+    <rect x="800" y="470" width="280" height="110" rx="16" fill="#ffffff" stroke="#e7e7e3"/>
+    <text x="825" y="510" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#111827">Alerts</text>
+    <text x="825" y="538" font-family="ui-sans-serif, system-ui" font-size="13" fill="#4b5563">Slack/email hooks & thresholds</text>
+  </g>
+</svg>
